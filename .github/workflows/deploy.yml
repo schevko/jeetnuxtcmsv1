@@ -15,8 +15,8 @@ jobs:
     - name: Sunucuya Bağlan ve Deploy Et
       uses: appleboy/ssh-action@v0.1.8
       with:
-        host: sunucu_ip_adresi
-        username: kullanıcı_adı
+        host: 161.35.12.199
+        username: root
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /var/www/jeetnuxtcmsv1
